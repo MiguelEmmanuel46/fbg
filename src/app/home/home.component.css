@@ -97,9 +97,25 @@ h2 {
 .fadeLeft {
   opacity: 0;
   transform: translate(-10vh, 0vh);
-  transition: all 1s;
+  transition: all 5s;
+}
 
+.fadeLeft2 {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 4s;
+}
 
+.fadeLeft3 {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 3s;
+}
+
+.fadeLeft4 {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 2s;
 }
 
 
@@ -161,29 +177,69 @@ h2 {
         }
 
         .contenedor{
-          
+          border: none;
         }
         .front{
-            background: #959f3e;           
+            background: #ffffff;           
+            color: #889da3;
             padding: 10px;
 
 
         }
         .back{
-          display: none;
+         background-color: #ffffff;
+         color: #889da3;
           text-align:center;
+          padding: 10px;
+          
+        }
 
-        }
-        .back{
-            background: #879ea1;
-            
-            padding: 10px;
-        }
         .contenedor:hover > .front{
-            /*transform: rotateY(0deg);*/
+            transform: rotateY(360deg);
+            transition: all 2s;
         }
         .contenedor:hover > .back{
-            /*transform: rotateY(0deg);*/
+            transform: rotateY(360deg);
+            transition: all 2s;
         }
         
 /**************************************************************************************/
+
+
+
+
+#inicio{
+  background-image: url('../../assets/img/JPG/robot-2.jpeg');
+
+  
+
+/* Create a parallax effect */
+
+background-attachment: fixed;
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+background-size: cover; 
+
+
+}
+
+
+
+.lggrey{
+  background: linear-gradient(#889da3, white);
+}
+
+.lgorange{
+  background: linear-gradient(white, #959d3a);
+}
+
+
+.pdgb-50{
+  padding-bottom: 80px;
+}
+.pdgt-50 {
+  padding-top: 80px;
+}
